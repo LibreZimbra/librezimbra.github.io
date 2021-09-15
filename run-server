@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ `hostname` != 'librezimbra-build' ]; then
+    echo "=== run me inside the build container" >&2
+    echo "=== the local server can then be reached at https://localhost:4000 from the host" >&2
+    exit 1
+fi
+
+bundle install
+bundle exec jekyll serve --host=0.0.0.0
