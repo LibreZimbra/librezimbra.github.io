@@ -41,3 +41,8 @@ the ''run-server'' script inside this repo. It will listen to port 4000, which i
 to the same port on the host.
 
 Feel free to leave some feedback (eg. tickets) or join the [Telegram group](https://t.me/librezimbra).
+
+
+Hint: if you messed up one of the git repos in ''pkg/'', and no local changes you wanna keep,
+you can just remove the broken repo and run the ''clone-all'' script for toplevel directory again.
+The missing repo will automatically be cloned again.
